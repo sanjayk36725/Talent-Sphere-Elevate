@@ -1,641 +1,210 @@
-# FSP (Future Scope Platform)
+<div align="center">
 
-## 🚀 Enterprise AI-Powered Unified Platform
+# 🛡️ NeoExamShield
 
-An integrated intelligent ecosystem connecting **Education, Software Development, Placement & Recruitment, Human Resources, and Smart Campus Management** into one unified platform with specialized AI agents.
+### Next-Gen AI-Powered Secure Examination Platform
 
-### 🎯 Mission
-Replace multiple disconnected systems with a single, centralized, AI-powered platform serving Students, Faculty, Developers, Recruiters, HR Professionals, and Administrators.
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=22D3EE&center=true&vCenter=true&width=600&lines=Real-Time+Proctoring+Engine;Face+%2B+Audio+Detection;AI-Powered+Evaluation+with+Gemini;Tamper-Proof+Exam+Environment" alt="Typing SVG" />
 
----
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Node](https://img.shields.io/badge/node-%3E%3D18-brightgreen)
+![React](https://img.shields.io/badge/react-19-61dafb?logo=react)
+![TypeScript](https://img.shields.io/badge/typescript-strict-3178c6?logo=typescript)
+![Vite](https://img.shields.io/badge/vite-powered-646cff?logo=vite)
+![Gemini](https://img.shields.io/badge/AI-Gemini-8E75B2?logo=googlegemini)
 
-## 📂 Project Structure
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:22D3EE,100:6366F1&height=120&section=header" width="100%"/>
 
-```
-FSP-Future-Scope-Platform/
-├── frontend/                    # React + Vite Frontend
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── services/
-│   │   ├── hooks/
-│   │   ├── utils/
-│   │   ├── contexts/
-│   │   ├── App.tsx
-│   │   └── main.tsx
-│   ├── public/
-│   ├── package.json
-│   ├── vite.config.ts
-│   ├── tsconfig.json
-│   ├── tailwind.config.js
-│   ├── .env.example
-│   └── README.md
-│
-├── backend/                     # Python FastAPI Backend
-│   ├── app/
-│   │   ├── api/v1/
-│   │   ├── models/
-│   │   ├── schemas/
-│   │   ├── services/
-│   │   ├── repositories/
-│   │   ├── ai_agents/
-│   │   ├── utils/
-│   │   ├── middleware/
-│   │   ├── db/
-│   │   ├── config.py
-│   │   ├── dependencies.py
-│   │   └── main.py
-│   ├── requirements.txt
-│   ├── Dockerfile
-│   ├── .env.example
-│   ├── init_db.py
-│   └── README.md
-│
-├── database/                    # Database Setup
-│   ├── schema.sql
-│   └── seed_data.sql
-│
-├── docs/                        # Documentation
-│   ├── API_DOCUMENTATION.md
-│   ├── DATABASE_SCHEMA.md
-│   ├── ARCHITECTURE.md
-│   └── DEPLOYMENT_GUIDE.md
-│
-├── .github/
-│   └── workflows/              # CI/CD Pipelines
-│       ├── backend_tests.yml
-│       ├── frontend_build.yml
-│       └── deploy.yml
-│
-├── docker-compose.yml           # Docker Setup
-├── .gitignore
-├── PROJECT_SETUP.md             # Setup Guide
-└── README.md                    # This file
-```
+</div>
 
 ---
 
-## 🏗️ Technology Stack
+## 📚 Table of Contents
 
-### Frontend
-- **React 19** - UI framework
-- **Vite** - Build tool
-- **TypeScript** - Type safety
-- **Tailwind CSS** - Styling
-- **Framer Motion** - Animations
-- **React Query** - State management
-- **Axios** - HTTP client
-
-### Backend
-- **Python 3.14** - Language
-- **FastAPI** - Web framework
-- **SQLAlchemy** - ORM
-- **PostgreSQL** - Database
-- **Redis** - Caching
-- **JWT** - Authentication
-
-### AI & ML
-- **Google Gemini API** - LLM
-- **LangChain** - AI orchestration
-- **FAISS** - Vector database
-- **RAG Architecture** - Retrieval-augmented generation
-
-### DevOps
-- **Docker** - Containerization
-- **Docker Compose** - Multi-container setup
-- **GitHub Actions** - CI/CD
-- **Render** - Backend deployment
-- **Vercel** - Frontend deployment
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Getting Started](#-getting-started)
+- [Environment Variables](#-environment-variables)
+- [Available Scripts](#-available-scripts)
+- [Proctoring Flow](#-proctoring-flow)
+- [Project Structure](#-project-structure)
+- [Contributing](#-contributing)
+- [License](#-license)
 
 ---
 
-## 🌟 Key Features
+## ✨ Features
 
-### 🔐 Authentication
-- ✅ User Registration & Login
-- ✅ JWT Token Management
-- ✅ Email Verification
-- ✅ Password Reset
-- ✅ Refresh Token System
-- ✅ Session Management
+### Advanced Proctoring System
 
-### 👥 Role-Based Access Control
-- ✅ Student
-- ✅ Faculty
-- ✅ Developer
-- ✅ Recruiter
-- ✅ HR Manager
-- ✅ Administrator
+| Capability | Description |
+|---|---|
+| **Live Camera & Face Detection** | Continuously monitors test-taker; ensures face stays visible. |
+| **Audio & Microphone Monitoring** | Real-time mic level sensing catches ambient noise or talking. |
+| **Strict Protocol Enforcement** | Disables right-click, copy, paste, text selection. |
+| **Tab & Window Focus Lock** | Detects fullscreen exit or tab switch; triggers auto warning. |
+| **Extension Integration** | Requires verified Chrome extension for tamper-proof setup. |
+| **Three-Strike Warning System** | Auto-terminates + auto-submits exam after 3 violations. |
 
-### 🤖 AI Helper & 35+ Agents
-- ✅ Personal Tutor Agent
-- ✅ Coding Mentor Agent
-- ✅ Resume Review Agent
-- ✅ Mock Interview Agent
-- ✅ Code Review Agent
-- ✅ + 30 more specialized agents
+### AI-Powered Evaluation
+Uses `@google/genai` to analyze responses, surface insights, generate questions dynamically.
 
-### 📊 Dashboard
-- ✅ Role-specific dashboards
-- ✅ Real-time statistics
-- ✅ Activity tracking
-- ✅ Analytics & reports
-- ✅ Performance metrics
+### Rich, Interactive UI
+- Dashboards via **TailwindCSS** + **Framer Motion**
+- Charts via **Recharts**
+- Icons via **Lucide React**
 
-### 📁 File Management
-- ✅ Upload (PDF, DOCX, CSV, Excel, Images, ZIP)
-- ✅ Download
-- ✅ Preview
-- ✅ Version control
-- ✅ Metadata tracking
-
-### 💬 AI Conversations
-- ✅ Multi-agent chat
-- ✅ Conversation history
-- ✅ File analysis
-- ✅ Context memory
-- ✅ Streaming responses
-
-### 📢 Notifications
-- ✅ Real-time alerts
-- ✅ Email notifications
-- ✅ Activity tracking
-- ✅ System notifications
+### Comprehensive Exam Delivery
+- Detailed MCQ rendering
+- PDF reports via **jsPDF** + **jsPDF-AutoTable**
+- Auto email notifications via **Nodemailer** + **Express**
 
 ---
 
-## 🚀 Quick Start
+## 🛠️ Tech Stack
+
+<div align="center">
+
+![React](https://img.shields.io/badge/-React_19-black?style=flat-square&logo=react)
+![TypeScript](https://img.shields.io/badge/-TypeScript-black?style=flat-square&logo=typescript)
+![Vite](https://img.shields.io/badge/-Vite-black?style=flat-square&logo=vite)
+![TailwindCSS](https://img.shields.io/badge/-TailwindCSS_4.1-black?style=flat-square&logo=tailwindcss)
+![Node.js](https://img.shields.io/badge/-Node.js-black?style=flat-square&logo=node.js)
+![Express](https://img.shields.io/badge/-Express-black?style=flat-square&logo=express)
+![Gemini](https://img.shields.io/badge/-Gemini_AI-black?style=flat-square&logo=googlegemini)
+
+</div>
+
+| Layer | Technologies |
+|---|---|
+| **Frontend** | React 19, TypeScript, Vite, TailwindCSS 4.1 |
+| **Backend/Scripts** | Node.js, Express, TSX, esbuild |
+| **AI Integration** | Google Gemini AI API (`@google/genai`) |
+| **Styling & Animation** | TailwindCSS, Motion |
+| **Utilities** | Lucide React (icons), Recharts (charts), jsPDF (PDF export) |
+
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+
-- Python 3.14+
-- PostgreSQL 14+
-- Docker & Docker Compose
+- Node.js v18+
+- Google Gemini API Key
 
-### Frontend Setup
+### Installation
 
 ```bash
-# Navigate to frontend
-cd frontend
-
-# Install dependencies
+git clone <your-repository-url>
+cd MILESTONE4
 npm install
+```
 
-# Configure environment
-cp .env.example .env
+### Environment Setup
 
-# Start development server
+Create `.env` in root (use `.env.example` as template):
+
+```env
+GEMINI_API_KEY=your_api_key_here
+```
+
+### Run Dev Server
+
+```bash
 npm run dev
 ```
 
-Frontend runs at: `http://localhost:5173`
+App runs on default Vite port — usually `http://localhost:5173`.
 
-### Backend Setup
-
-```bash
-# Navigate to backend
-cd backend
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Configure environment
-cp .env.example .env
-
-# Initialize database
-python init_db.py
-
-# Start development server
-uvicorn app.main:app --reload
-```
-
-Backend runs at: `http://localhost:8000`
-API Docs: `http://localhost:8000/api/docs`
-
-### Docker Setup (Recommended)
+### Production Build
 
 ```bash
-# Start all services
-docker-compose up -d
-
-# Services:
-# - Frontend: http://localhost:5173
-# - Backend: http://localhost:8000
-# - PostgreSQL: localhost:5432
-# - Redis: localhost:6379
-```
-
----
-
-## 📖 API Documentation
-
-### Authentication
-```bash
-# Register
-POST /api/v1/auth/register
-
-# Login
-POST /api/v1/auth/login
-
-# Refresh Token
-POST /api/v1/auth/refresh
-
-# Get Profile
-GET /api/v1/users/profile
-```
-
-### AI Agents
-```bash
-# List Agents
-GET /api/v1/ai/agents
-
-# Send Message
-POST /api/v1/ai/chat
-
-# Get Conversations
-GET /api/v1/ai/conversations
-
-# Upload File for Analysis
-POST /api/v1/ai/upload-for-analysis
-```
-
-### Dashboard
-```bash
-# Get Overview
-GET /api/v1/dashboard/overview
-
-# Get Statistics
-GET /api/v1/dashboard/statistics
-
-# Get Recent Activities
-GET /api/v1/dashboard/recent-activities
-```
-
-For complete API documentation, see: [API_DOCUMENTATION.md](docs/API_DOCUMENTATION.md)
-
----
-
-## 🗄️ Database
-
-### Supported Databases
-- **Development**: SQLite
-- **Production**: PostgreSQL (Cloud)
-
-### Key Tables
-- users, roles, permissions
-- students, faculty, developers, recruiters, hr_employees, administrators
-- companies, job_posts, job_applications, resumes
-- courses, materials, assignments
-- ai_conversations, ai_messages
-- file_uploads, notifications
-- audit_logs, activity_logs
-
-For complete schema, see: [DATABASE_SCHEMA.md](docs/DATABASE_SCHEMA.md)
-
----
-
-## 🤖 AI Agents
-
-### Education Agents (8)
-- 🎓 Personal Tutor
-- 💻 Coding Mentor
-- 📝 Assignment Helper
-- ❓ Quiz Generator
-- 🎯 Placement Preparation
-- 📄 Resume Review
-- 🎯 Career Guidance
-- 📊 Attendance Analysis
-
-### Development Agents (8)
-- 🔧 Code Generation
-- 👀 Code Review
-- 🐛 Debugging
-- ✅ Unit Test Generator
-- 📚 API Documentation
-- 🗄️ SQL Query
-- 🚀 DevOps
-- 🔄 GitHub PR Review
-
-### Placement Agents (6)
-- 📋 Resume Screening
-- 👥 Candidate Matching
-- 🎤 Mock Interview
-- 📈 Skill Gap Analysis
-- 🧠 Coding Evaluation
-- 🗣️ Communication Assessment
-
-### HR Agents (5)
-- 🎓 Employee Onboarding
-- 📅 Leave Management
-- 📖 Policy Q&A
-- 💰 Payroll Support
-- 📊 Employee Feedback
-
-### Campus Agents (8)
-- 🆘 Student Helpdesk
-- 📚 Timetable Assistant
-- 🔬 Lab Booking
-- 🎓 Placement Coordinator
-- 🎪 Event Registration
-- 📚 Library Assistant
-- 🏠 Hostel Management
-- 💵 Fee Inquiry
-
----
-
-## 📱 Responsive Design
-
-The application is fully responsive and works on:
-- ✅ Desktop (1920px+)
-- ✅ Laptop (1366px - 1920px)
-- ✅ Tablet (768px - 1366px)
-- ✅ Mobile (320px - 768px)
-
----
-
-## 🎨 UI/UX Features
-
-- ✅ Premium Glassmorphism Design
-- ✅ Dark & Light Themes
-- ✅ Smooth Animations (Framer Motion)
-- ✅ Interactive Components
-- ✅ Real-time Updates
-- ✅ Loading Skeletons
-- ✅ Error Handling
-- ✅ Toast Notifications
-- ✅ Modal Dialogs
-- ✅ Dropdown Menus
-
----
-
-## 🔒 Security
-
-- ✅ JWT Authentication
-- ✅ Password Hashing (bcrypt)
-- ✅ Role-Based Access Control
-- ✅ Input Validation
-- ✅ SQL Injection Protection (ORM)
-- ✅ CSRF Protection
-- ✅ XSS Prevention
-- ✅ Secure File Upload
-- ✅ Rate Limiting Ready
-- ✅ Audit Logging
-
----
-
-## 📊 User Roles & Permissions
-
-### Student
-- View courses & materials
-- Submit assignments
-- Track placement status
-- Attend interviews
-- Use AI tutoring
-- Upload resume
-
-### Faculty
-- Manage courses
-- Grade assignments
-- View student analytics
-- Coordinate placements
-- Monitor attendance
-
-### Developer
-- Access code assistance
-- Use code review tools
-- Get debugging help
-- Generate documentation
-- Access DevOps tools
-
-### Recruiter
-- Post job openings
-- Screen resumes
-- Schedule interviews
-- Match candidates
-- Track applications
-
-### HR Manager
-- Manage employees
-- Process leave requests
-- Handle payroll
-- Conduct onboarding
-- Collect feedback
-
-### Administrator
-- Manage all users
-- System configuration
-- View analytics
-- Audit logs
-- User management
-
----
-
-## 🚀 Deployment
-
-### Frontend - Vercel
-
-1. Connect GitHub repository
-2. Configure build settings:
-   - Build Command: `npm run build`
-   - Output Directory: `dist`
-3. Set environment variables
-4. Deploy
-
-### Backend - Render
-
-1. Connect GitHub repository
-2. Configure:
-   - Build Command: `pip install -r requirements.txt`
-   - Start Command: `uvicorn app.main:app --host 0.0.0.0 --port 8000`
-3. Add PostgreSQL environment variables
-4. Deploy
-
-### Database - PostgreSQL Cloud
-
-- Neon.tech
-- Supabase
-- AWS RDS
-- Railway
-
-For detailed deployment guide, see: [DEPLOYMENT_GUIDE.md](docs/DEPLOYMENT_GUIDE.md)
-
----
-
-## 📚 Documentation
-
-| Document | Purpose |
-|----------|----------|
-| [API_DOCUMENTATION.md](docs/API_DOCUMENTATION.md) | Complete API endpoints reference |
-| [DATABASE_SCHEMA.md](docs/DATABASE_SCHEMA.md) | Database tables & relationships |
-| [ARCHITECTURE.md](docs/ARCHITECTURE.md) | System architecture & data flow |
-| [DEPLOYMENT_GUIDE.md](docs/DEPLOYMENT_GUIDE.md) | Production deployment guide |
-| [PROJECT_SETUP.md](PROJECT_SETUP.md) | Initial setup instructions |
-| [frontend/README.md](frontend/README.md) | Frontend-specific documentation |
-| [backend/README.md](backend/README.md) | Backend-specific documentation |
-
----
-
-## 🛠️ Development
-
-### Frontend Development
-
-```bash
-cd frontend
-
-# Development server
-npm run dev
-
-# Build for production
 npm run build
-
-# Preview production build
-npm run preview
-
-# Run tests
-npm run test
-
-# Lint code
-npm run lint
-```
-
-### Backend Development
-
-```bash
-cd backend
-
-# Activate virtual environment
-source venv/bin/activate
-
-# Development server
-uvicorn app.main:app --reload
-
-# Run tests
-pytest tests/
-
-# Check code style
-flake8 app/
+npm start
 ```
 
 ---
 
-## 🧪 Testing
+## 🔑 Environment Variables
 
-### Frontend Testing
-```bash
-cd frontend
-npm run test
-```
-
-### Backend Testing
-```bash
-cd backend
-pytest tests/ --cov=app
-```
+| Variable | Required | Description |
+|---|---|---|
+| `GEMINI_API_KEY` | ✅ | API key for Google Gemini AI integration |
 
 ---
 
-## 🐛 Troubleshooting
+## 📜 Available Scripts
 
-### Frontend
-- Port 5173 already in use? → Change in `vite.config.ts`
-- Dependencies issue? → `npm ci` instead of `npm install`
-- Build fails? → Clear cache: `rm -rf node_modules && npm install`
+| Script | Description |
+|---|---|
+| `npm run dev` | Starts Vite dev server |
+| `npm run build` | Builds app for production |
+| `npm start` | Starts production server |
 
-### Backend
-- Database connection error? → Check `.env` DATABASE_URL
-- Port 8000 in use? → Change PORT in `.env`
-- Migrations failed? → Run `python init_db.py`
+---
 
-### Docker
-- Container won't start? → Check logs: `docker-compose logs`
-- Port conflicts? → Check `.env` ports
-- Database issues? → Rebuild: `docker-compose down -v && docker-compose up`
+## 🔒 Proctoring Flow
+
+```mermaid
+flowchart TD
+    A[Student opens exam URL] --> B[NeoExamShield component initializes]
+    B --> C[Camera + Microphone permission prompt]
+    C --> D{Chrome Extension verified?}
+    D -- No --> E[Block start]
+    D -- Yes --> F[Click 'Start Examination & Lock Fullscreen']
+    F --> G[Exam runs in locked environment]
+    G --> H{Violation detected?<br/>tab switch / face lost / copy-paste}
+    H -- Yes --> I[Issue warning +1]
+    I --> J{3 warnings reached?}
+    J -- Yes --> K[Auto-terminate + auto-submit]
+    J -- No --> G
+    H -- No --> G
+```
+
+1. Student navigates to exam URL.
+2. `NeoExamShield` component initializes.
+3. Student authorizes **Camera** and **Microphone**.
+4. System verifies **NeoExamShield Chrome Extension** installed.
+5. Student clicks **"Start Examination & Lock Fullscreen"**.
+6. Exam runs locked — any deviation issues warning.
+7. After **3 warnings** → auto-terminate + auto-submit.
+
+---
+
+## 📁 Project Structure
+
+```
+MILESTONE4/
+├── src/
+│   ├── components/     # React components (NeoExamShield, MCQ renderer, dashboards)
+│   ├── hooks/          # Custom hooks (camera, mic, focus-lock)
+│   ├── services/       # Gemini AI, PDF, email services
+│   └── ...
+├── server/              # Express backend
+├── .env.example
+├── package.json
+└── README.md
+```
 
 ---
 
 ## 🤝 Contributing
 
-1. Create a feature branch
-2. Make your changes
-3. Commit with clear messages
-4. Push to GitHub
-5. Create a Pull Request
+1. Fork repo
+2. Branch: `git checkout -b feature/your-feature`
+3. Commit: `git commit -m 'Add feature'`
+4. Push: `git push origin feature/your-feature`
+5. Open Pull Request
 
 ---
 
-## 📝 License
+## 📄 License
 
-MIT License - All rights reserved
+MIT — see `LICENSE` file.
 
-Copyright © 2026 FSP (Future Scope Platform)
+<div align="center">
 
----
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,100:22D3EE&height=100&section=footer" width="100%"/>
 
-## 📧 Support
+**Built with 🛡️ for academic integrity**
 
-For issues, questions, or suggestions:
-1. Create a GitHub Issue
-2. Include detailed description
-3. Attach screenshots/logs if applicable
-4. Reference relevant documentation
-
----
-
-## 🎯 Roadmap
-
-### Phase 1 ✅
-- Backend API development
-- Database design
-- AI agents framework
-- Authentication system
-
-### Phase 2 🔄
-- Frontend integration
-- Dashboard development
-- UI/UX implementation
-- Component library
-
-### Phase 3 📅
-- AI integration (Gemini API)
-- RAG implementation
-- Advanced features
-- Performance optimization
-
-### Phase 4 🚀
-- Production deployment
-- Cloud setup
-- Monitoring & analytics
-- Scaling infrastructure
-
----
-
-## 🌐 Live Demo
-
-- **Frontend**: https://fsp-platform.vercel.app
-- **Backend API**: https://fsp-api.render.com
-- **API Docs**: https://fsp-api.render.com/api/docs
-
----
-
-**Built with ❤️ for Enterprise**
-
----
-
-### Quick Links
-
-- 📖 [Frontend README](frontend/README.md)
-- 🔧 [Backend README](backend/README.md)
-- 📚 [API Documentation](docs/API_DOCUMENTATION.md)
-- 🗄️ [Database Schema](docs/DATABASE_SCHEMA.md)
-- 🏗️ [Architecture](docs/ARCHITECTURE.md)
-- 🚀 [Deployment Guide](docs/DEPLOYMENT_GUIDE.md)
-
----
-
-**Version**: 1.0.0  
-**Last Updated**: January 2026  
-**Status**: Production Ready ✅
+</div>

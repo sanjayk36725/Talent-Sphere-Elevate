@@ -2,7 +2,7 @@
 
 # 🛡️ NeoExamShield
 
-### Next-Gen AI-Powered Secure Examination Platform
+### Next-Gen AI-Powered Secure Examination Platfo
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=22D3EE&center=true&vCenter=true&width=600&lines=Real-Time+Proctoring+Engine;Face+%2B+Audio+Detection;AI-Powered+Evaluation+with+Gemini;Tamper-Proof+Exam+Environment" alt="Typing SVG" />
 
